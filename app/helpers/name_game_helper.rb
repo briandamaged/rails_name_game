@@ -1,0 +1,2 @@
+module NameGameHelper
+end

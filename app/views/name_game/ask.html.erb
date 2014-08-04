@@ -1,0 +1,12 @@
+<h1>Hey, buddy...</h2>
+
+<%= form_tag("/name_game/sing", method: "get") do %>
+
+  <%= label_tag      :name, "What's your name?" %>
+  <%= text_field_tag :name %>
+  <%= submit_tag "Submit" %>
+<% end %>
+
+<% if flash[:error] %>
+  <p><%= flash[:error] %></p>
+<% end %>
